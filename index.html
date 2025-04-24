@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 17</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="text-align: center;">Manlio Delgado Torres</h1>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Acerca de</a>
+                    <ul class="submenu">
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Nuestra Misión</a></li>
+                        <li><a href="#">Nuestra Visión</a></li>
+                    </ul>
+                </li>        
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Equipos de Mesa</a></li>
+                        <li><a href="#">Servidores</a></li>
+                        <li><a href="#">Portatiles</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Softwares</a></li>
+                        <li><a href="#">Cableado Estructurado</a></li>
+                        <li><a href="#">Mantenimiento Preventivo y Correctivo</a></li>
+                        <li><a href="#">Asesorías en Facturación en Salud</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Certificaciones</a>
+                    <ul class="submenu">
+                        <li><a href="#">SENA - Gestión Documental</a></li>
+                        <li><a href="#">UDEMY - Python</a></li>
+                        <li><a href="#">USanJose - E-Businness</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="/images/FONDO.png" alt="Fondo.Png" width="1550px" title="Fondo"/><br><br>
+    <div>
+        <section>
+            <h1 style="text-align:center;"> Registro personal</h1>
+            <form class="formulario" onsubmit="return validarFormulario()">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label>Telefono:</label>
+                <input type="number" id="telefono" name="telefono">
+                <label>Correo:</label>
+                <input type="email" id="email" name="email">
+                <label>Direccion:</label>
+                <input type="text" id="direccion" name="direccion">
+                <label>Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena">
+                <label>Cargar imagen:</label>
+                <input type="file" id="imagen" name="imagen" onchange="mostrarImagen(event)">
+                <img id="ver-imagen" class="ver-imagen">
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </div>
+    <script src="./Scripts/leccion17.js"></script>
+    <footer>
+        <div class="footer-container">
+            <!-- Sección 1: Información general -->
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Empresa dedicada a la innovación tecnológica con más de 10 años de experiencia.</p>
+            </div>
+   
+            <!-- Sección 2: Enlaces útiles -->
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+   
+            <!-- Sección 3: Redes sociales -->
+            <div class="footer-section">
+                <h3>Síguenos en </h3>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook<i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=es">X antes Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+   
+        <div class="footer-bottom">
+            © 2025 Manlio Delgado Torres - Todos los derechos reservados.
+        </div>
+    </footer>
+  </body>
+</html>
